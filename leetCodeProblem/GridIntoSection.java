@@ -1,3 +1,4 @@
+// 3394. check if grid can cut in section
 import java.util.*;
 class GridIntoSection{
     public static void main(String args[]){
