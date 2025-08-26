@@ -14,8 +14,10 @@ public class Prefix_maxSubarray {
         for(int i=0;i<arr.length;i++){
             for(int j=i;j<arr.length;j++){
                 currsum = i==0 ? prefix_sum[j] : prefix_sum[j]-prefix_sum[i-1];
+                System.out.print(currsum + " ");
+                maxSum = Math.max(currsum, maxSum);
             }
-            maxSum = Math.max(currsum, maxSum);
+            
         }
         return maxSum;
     }

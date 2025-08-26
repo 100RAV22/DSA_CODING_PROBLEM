@@ -22,7 +22,9 @@ public class TrappingRainWater {
         int trapWater = 0;
         for(int i=0;i<height.length;i++){
             int waterLevel = Math.min(leftmax[i], rightmax[i]);
+            
             trapWater += (waterLevel - height[i]);
+            
         }
         return trapWater;
     }
